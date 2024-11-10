@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <title>WATERMELON BOY</title>
 </head>
@@ -14,18 +15,43 @@
 
 
 <body>
-    <nav aria-label="Navigasi Utama"> 
+    <!-- <nav aria-label="Navigasi Utama"> 
         <a class="h">WATERMELON BOY</a> 
-        <a href="https://www.google.com" target="_blank">HOME</a>
-        <a href="https://www.google.com" target="_blank">ABOUT</a>
-        <a href="https://www.google.com" target="_blank">SERVICE </a> 
-        <a href="https://www.google.com" target="_blank">CONTACT</a>
-    </nav>
+        <a href="http://127.0.0.1:5500/TUGAS/index.html#hero" target="_blank" >HOME</a>
+        <a href="#head-opening">ABOUT</a>
+        <a href="#layanan">SERVICE </a> 
+        <a href="#contact">CONTACT</a>
+    </nav> -->
+
+    <header>
+        <nav>
+            <h1>WATER MELON BOY</h1>
+            <div class="icon_menu" id="icon_menu">
+                <i class="ph ph-list"></i>
+            </div>
+            <ul class="hidden" id="navigation">
+                <li>
+                    <a href="">HOME</a>
+                </li>
+                <li>
+                    <a href="">ABOUT</a>
+                </li>
+                <li>
+                    <a href="">SERVICE</a>
+                </li>
+                <li>
+                    <a href="">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="script.js"></script>
 
     <hr>
     <main>
         <article class="hero">
-            <header>
+            <header class="header">
                 <h1>WATERMELON BOY COMPANY</h1>
                 <h4>WATERMELON BOY: SEMANGKA MANIS PILIHAN, SEGARNYA KEBANGETAN! 🍉</h4>
             </header>
@@ -33,7 +59,7 @@
 
         <!-- <hr> -->
 
-        <article class="head-opening">
+        <article class="head-opening" id="head-opening">
                 <h1>WATERMELON BOY</h1>
                 <div class="container-head">
                 <img class="img-head" src="IMAGE/watermelon.jpg" alt="Semangka">
@@ -68,7 +94,7 @@
 
         <hr>
 
-        <article class="layanan">
+        <article class="layanan" id="layanan">
             <h3>Layanan Kami</h3>
             <div class="container-layanan">
                 <div class="img-layanan">
@@ -232,7 +258,7 @@
 
         <hr>
 
-        <article class="contact">
+        <article class="contact" id="contact">
             <p> Itulah beberapa produk dan layanan-layanan yang bisa kami berikan. jika anda memiliki permintaan khusuh, silahkan hubungi kami.</p>
             <form action="https://formspree.io/f/meoqjdby" method="post">
                 <fieldset>
@@ -265,5 +291,7 @@
         </footer>
 
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-header, section, footer {
+.header, section, footer {
     padding: 20px;
 }
 
@@ -9,6 +9,10 @@ body {
     line-height: 1.7;
     margin: 0;
     padding: 0;
+}
+
+main{
+  margin-top: 50px;
 }
 
 article {
@@ -37,7 +41,7 @@ article {
     color: #00cc66; 
 }
 
-header {
+.header {
     background-color: #282828; 
     text-align: center;
 }
@@ -46,16 +50,16 @@ header {
     padding-left: 50px;
 }
 
-nav {
+/* nav {
     background-color: #333;
     padding: 10px;
     text-align: right;
-}
+} */
 .p-WhyUs{
     text-indent: -40px;
 }
 
-nav a {
+/* nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
@@ -65,7 +69,38 @@ nav a {
 nav a:hover {
     color: #00cc66; 
     text-decoration: underline; 
-  }
+  } */
+header nav {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding-inline: 40px;
+    align-items: center;
+    width: 94vw;
+    position: fixed;
+}
+
+header nav h1{
+    color: white;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color:white ;
+}
+
+header nav ul a:hover{
+    color: green;
+}
+
+.icon_menu{
+  display: none;
+}
 
 .ol1{
     text-align: justify;
@@ -151,9 +186,10 @@ th{
 @media (max-width:600px){
     table{
         display: block;
-        overflow-x: auto;
+        overflow-x : auto;
     }
 }
+
 
 th {
     background-color: #282828; 
@@ -349,6 +385,32 @@ nav {
     }
   }
   @media (max-width: 768px) {
+
+    .icon_menu{
+      display: flex;
+      color: white;
+      font-size: 23px;
+      margin-right: 40px;
+    }
+  header nav {
+      display: flex;
+      flex-wrap: wrap;
+      
+  }
+
+  header nav h1{
+      font-size: 18px;
+  }
+
+  header nav ul{
+      flex-direction: column;
+      width: 100%;
+     /* align-items: center; */
+     margin-left: 140px;
+  }
+  header nav ul.hidden{
+      display: none;
+  }
     .container-head {
       flex-direction: column;
     }
