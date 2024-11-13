@@ -224,9 +224,9 @@ th {
   gap: 10px;
   justify-content: center;
 }
-.product-card{
+/* .product-card{
 border: 0.5px solid rgb(13, 199, 10);
-}
+} */
 
 .product-card img{
 width: 250px;
